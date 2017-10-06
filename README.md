@@ -59,24 +59,6 @@ and 137 with the initial message (or some variant of):
 So tests for them may not be 100% accurate, but close enough for me. Additionally, a few
 other parsers failed altogether. 
 
-      gumbo-parser@0.3.0          : 25.2510 ms/file ± 13.1904
-      high5@1.0.0 failed            (exit code 1)
-      html-parser@0.10.1          : 27.1866 ms/file ± 21.4137
-      html5@1.0.0                 : 178.019 ms/file ± 232.016
-      htmlparser@1.7.7            : 14.1844 ms/file ± 79.8066
-      htmlparser2-dom@3.9.2       : 6.13265 ms/file ± 5.81879
-      htmlparser2@3.9.2           : 4.36647 ms/file ± 4.50375
-      hubbub failed                 (exit code 1)
-    * jsdom-fragment@11.3.0       : 37.3501 ms/file ± 22.5679
-    * jsdom-node-locations@11.3.0 : 115.443 ms/file ± 62.5155
-    * jsdom@11.3.0                : 48.1934 ms/file ± 26.5845
-      libxmljs@0.18.7             : 4.63207 ms/file ± 4.72320
-      neutron-html5parser@0.2.0   : 3.18836 ms/file ± 1.90246
-      parse5@3.0.2 failed           (exit code 1)
-      sax@1.2.4                   : 10.0947 ms/file ± 13.6911
-
-Same list, but sorted:
-
       high5@1.0.0 failed            (exit code 1)
       hubbub failed                 (exit code 1)
       parse5@3.0.2 failed           (exit code 1)
