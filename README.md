@@ -47,6 +47,52 @@ npm install
 npm test
 ```
 
+### Results
+
+Tested on a Mid 2015 Macbook Pro, 2.5 GHz Intel Core i7, running node 8.6.0 and npm 4.6.1.
+
+Both `jsdom-fragment` and `jsdom-node-locations` threw errors on tests 84, 89, 103, 111,
+and 137 with the initial message (or some variant of):
+
+> Could not parse CSS @import URL ... relative to base URL "about:blank"
+
+So tests for them may not be 100% accurate, but close enough for me. Additionally, a few
+other parsers failed altogether. 
+
+      gumbo-parser        : 25.2510 ms/file ± 13.1904
+      high5 failed          (exit code 1)
+      html-parser         : 27.1866 ms/file ± 21.4137
+      html5               : 178.019 ms/file ± 232.016
+      htmlparser          : 14.1844 ms/file ± 79.8066
+      htmlparser2-dom     : 6.13265 ms/file ± 5.81879
+      htmlparser2         : 4.36647 ms/file ± 4.50375
+      hubbub failed         (exit code 1)
+    * jsdom-fragment      : 37.3501 ms/file ± 22.5679
+    * jsdom-node-locations: 115.443 ms/file ± 62.5155
+    * jsdom               : 48.1934 ms/file ± 26.5845
+      libxmljs            : 4.63207 ms/file ± 4.72320
+      neutron-html5parser : 3.18836 ms/file ± 1.90246
+      parse5 failed         (exit code 1)
+      sax                 : 10.0947 ms/file ± 13.6911
+
+Same list, but sorted:
+
+      high5 failed          (exit code 1)
+      hubbub failed         (exit code 1)
+      parse5 failed         (exit code 1)
+      neutron-html5parser : 3.18836 ms/file ± 1.90246
+      htmlparser2         : 4.36647 ms/file ± 4.50375
+      libxmljs            : 4.63207 ms/file ± 4.72320
+      htmlparser2-dom     : 6.13265 ms/file ± 5.81879
+      sax                 : 10.0947 ms/file ± 13.6911
+      htmlparser          : 14.1844 ms/file ± 79.8066
+      gumbo-parser        : 25.2510 ms/file ± 13.1904
+      html-parser         : 27.1866 ms/file ± 21.4137
+    * jsdom-fragment      : 37.3501 ms/file ± 22.5679
+    * jsdom               : 48.1934 ms/file ± 26.5845
+    * jsdom-node-locations: 115.443 ms/file ± 62.5155
+      html5               : 178.019 ms/file ± 232.016
+
 ## License
 
 **The software is license under "MIT"**
