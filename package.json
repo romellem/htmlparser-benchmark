@@ -29,6 +29,7 @@
     "htmlparser2": "*",
     "high5": "*",
     "hubbub": "*",
+    "jsdom": "^11.3.0",
     "libxmljs": "*",
     "sax": "*",
     "html5": "*",
